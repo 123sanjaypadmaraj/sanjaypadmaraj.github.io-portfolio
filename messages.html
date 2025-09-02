@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+{% block content %}
+<section style="padding-top:7rem;max-width:900px;margin:0 auto;">
+  <h2>Messages (dev preview)</h2>
+  <table class="table">
+    <thead><tr><th>Name</th><th>Email</th><th>Message</th><th>Time</th></tr></thead>
+    <tbody>
+      {% for n,e,m,t in rows %}
+      <tr><td>{{ n }}</td><td>{{ e }}</td><td>{{ m }}</td><td>{{ t }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}
