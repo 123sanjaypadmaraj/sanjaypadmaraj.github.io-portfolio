@@ -3,262 +3,469 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sanjay Padmaraj - Portfolio</title>
+  <meta name="description" content="Sanjay Padmaraj — CSE student, software developer, AI/ML and IoT builder.">
+  <meta name="author" content="Sanjay Padmaraj">
+  <title>Sanjay Padmaraj — Software Developer & AI/IoT Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
-<header id="top">
-  <div class="brand">Portfolio<span>.</span></div>
-  <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#achievement">Achievements</a>
-    <a href="#portfolio">Projects</a>
-    <a href="#por">PoR</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <header class="site-header" id="top">
+    <a class="logo" href="#home">S<span>.</span>P</a>
 
-<main>
-  <!-- Hero Section -->
-  <section class="home" id="home">
-    <div class="home-text">
-      <h4>Hello</h4>
-      <h1>I'm Sanjay Padmaraj <br><span>Engineering Student • Software Developer</span></h1>
-      <a href="#" class="btn" target="_blank">Download Resume</a>
-    </div>
-  </section>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
-  <!-- About -->
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="static/img/photo.png" alt="profile">
-    </div>
-    <div class="about-text">
-      <h4>Who am I</h4>
-      <h2>About Me</h2>
-      <p>I’m an engineering student who loves building useful things with code. I work across Python, Machine Learning, and modern web development.</p>
-      <div class="about-grid">
-        <div class="about-in">
-          <h5>Education</h5>
-          <ul>
-            <li><strong>B.E. (Engineering)</strong> — New Horizon College Of Engineering • 2025–2029</li>
-            <li><strong>Class XII</strong> — Geetanjali Olympiad School • 2022 - 2025</li>
-            <li><strong>Class X</strong> — New Horizon Gurukul • 2012 - 2023</li>
-          </ul>
-        </div>
-        <div class="about-in">
-          <h5>Tech</h5>
-          <ul class="tags">
-            <li>Python</li>
-            <li>AI</li>
-            <li>HTML</li>
-            <li>Version Control Systems</li>
-            <li>Numpy</li>
-            <li>Pandas</li>
-            <li>Seaborn</li>
-            <li>Machine Learning</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    <nav class="navbar">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">What I Do</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- Experience -->
-  <section class="experience" id="experience">
-    <div class="main-text">
-      <h2>My Experiences</h2>
-    </div>
-    <div class="experience-content">
-      <div class="box">
-        <img src="static/img/Experience.jpg" alt="Campus Projects">
-        <h3>Campus Projects</h3>
-        <h4><span>Developer</span></h4>
-        <p>
-          • Built multiple software projects with clear documentation.<br>
-          • Collaborated with peers; shipped working demos.<br>
-          • Gained hands-on experience in using AI to complete projects with ease.
+  <main>
+    <!-- HERO — inspired by the supplied Dribbble template's compact personal-branding landing page -->
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">HELLO, I'M SANJAY <span>✦</span></p>
+
+        <h1>
+          I build
+          <span class="accent-line">useful technology</span>
+          with code.
+        </h1>
+
+        <p class="hero-description">
+          Engineering student at New Horizon College of Engineering,
+          building across <strong>Python, AI/ML, web development and IoT</strong>.
+          I like turning ideas into working prototypes that solve real problems.
         </p>
-      </div>
-    </div>
-  </section>
 
+        <div class="hero-actions">
+          <a class="button button-dark" href="#projects">Check my projects <span>↗</span></a>
+          <a class="text-link" href="mailto:padmarajsanjay@gmail.com">Email me <span>↗</span></a>
+        </div>
+      </div>
 
-  <!-- Skills -->
-  <section class="skills" id="skills">
-    <div class="main-text">
-      <h2>My Skills</h2>
-    </div>
-    <div class="skills-content">
-      <div class="box">
-        <img src="static/img/Competitive Programming.jpg" alt="CP">
-        <h3>Competitive Programming</h3>
-        <p>Algorithmic problem solving and data structures.</p>
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="portrait-frame">
+          <img src="static/img/photo.png" alt="Sanjay Padmaraj">
+        </div>
+        <div class="floating-card patent-card">
+          <span class="mini-label">PROVISIONAL PATENT</span>
+          <strong>Smart Blind Stick</strong>
+          <small>AI + IoT Assistive Technology</small>
+        </div>
+        <div class="floating-card cgpa-card">
+          <strong>9.75</strong>
+          <span>CGPA</span>
+        </div>
       </div>
-      <div class="box">
-        <img src="static/img/Machine learning.jpg" alt="ML">
-        <h3>Machine Learning</h3>
-        <p>From data wrangling to model training.</p>
-      </div>
-      <div class="box">
-        <img src="static/img/Data Handling.jpg" alt="Data">
-        <h3>Data Handling</h3>
-        <p>Working with structured and unstructured data.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Achievements -->
-  <section class="achievement" id="achievement">
-    <div class="main-text">
-      <h2>My Achievements</h2>
-      <h4>Some of My Major Achievements</h4>
-    </div>
-    <div class="portfolio-content">
-      <div class="row">
-        <img src="static/img/Badminton1.jpg" alt="Badminton Tournament">
-        <div class="main-row">
-          <div class="row-text"><h6>Sports</h6></div>
-        </div>
-        <h3>Badminton Tournament Winner</h3>
-      </div>
-      <div class="row">
-        <img src="static/img/Quiz.png" alt="Quiz">
-        <div class="main-row">
-          <div class="row-text"><h6>Academics</h6></div>
-        </div>
-        <h3>Completed Data Analytics, AI/ML Course from IITM</h3>
-      </div>
-      <div class="row">
-        <img src="static/img/keyboard.jpg" alt="Keyboard Player">
-        <div class="main-row">
-          <div class="row-text"><h6>Academics</h6></div>
-        </div>
-        <h3>Passionate Keyboard Player</h3>
-      </div>
-    </div>
-  </section>
- 
-  <!-- Projects -->
-  <section class="portfolio" id="portfolio">
-    <div class="main-text">
-      <h2>My Projects</h2>
-      <h4>Some Of My Distinguished Works</h4>
-    </div>
-    <div class="portfolio-content">
-      <div class="row">
-        <a href="#" target="_blank" rel="noopener">
-          <img src="static/img/Data Querying Tool.jpg" alt="Data Tool">
-        </a>
-        <div class="main-row">
-          <div class="row-text"><h6>Web App</h6></div>
-        </div>
-        <h3>Data Querying Tool</h3>
-      </div>
-      <div class="row">
-        <a href="#" target="_blank" rel="noopener">
-          <img src="static/img/Large Language Model.jpg" alt="LLM">
-        </a>
-        <div class="main-row">
-          <div class="row-text"><h6>AI</h6></div>
-        </div>
-        <h3>Large Language Model Experiment</h3>
-      </div>
-      <div class="row">
-        <a href="#" target="_blank" rel="noopener">
-          <img src="static/img/gesture.jpg" alt="LLM">
-        </a>
-        <div class="main-row">
-          <div class="row-text"><h6>AI</h6></div>
-        </div>
-        <h3>Gesture Controlled Actions on a computer</h3>
-      </div>
-      <div class="row">
-        <a href="#" target="_blank" rel="noopener">
-          <img src="static/img/linkedin.png" alt="LinkedIn Profile Matcher">
-        </a>
-        <div class="main-row">
-          <div class="row-text"><h6>AI</h6></div>
-        </div>
-        <h3>Linkedin Profile Matcher</h3>
-      </div>
-      <div class="row">
-        <a href="#" target="_blank" rel="noopener">
-          <img src="static/img/mcp server.jpg" alt="MCP Server">
-        </a>
-        <div class="main-row">
-          <div class="row-text"><h6>AI</h6></div>
-        </div>
-        <h3>MCP Server</h3>
-      </div>
-      <div class="row">
-        <a href="#" target="_blank" rel="noopener">
-          <img src="static/img/Portfolio.jpg" alt="Portfolio">
-        </a>
-        <div class="main-row">
-          <div class="row-text"><h6>Web</h6></div>
-        </div>
-        <h3>Personal Portfolio Website</h3>
-      </div>
-    </div>
-  </section>
+      <div class="scroll-note"><span></span> Scroll to explore</div>
+    </section>
 
-  <!-- PoR -->
-  <section class="por" id="por">
-    <div class="main-text">
-      <h2>Position of Responsibilities</h2>
-      <h4>Some of My Volunteer Work</h4>
-    </div>
-    <div class="portfolio-content">
-      <div class="row">
-        <img src="static/img/Badminton_2.jpg" alt="Club Coordinator">
-        <div class="main-row">
-          <div class="row-text"><h6>Sports Club</h6></div>
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="section-intro reveal">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>Who am I?</h2>
+      </div>
+
+      <div class="about-content">
+        <div class="about-lead reveal">
+          <p class="large-copy">
+            I'm an engineering student and passionate software developer with
+            a strong foundation in Python, web development and machine learning.
+          </p>
+          <p>
+            I enjoy building useful things with code and exploring practical
+            applications of AI, LLMs, data analytics, IoT and embedded systems.
+            My work ranges from software tools to assistive hardware prototypes.
+          </p>
+          <a class="arrow-link" href="#resume">More about my journey <span>→</span></a>
         </div>
-        <h3>Badminton Club Coordinator</h3>
-      </div>
-    <div class="portfolio-content">
-      <div class="row">
-        <img src="static/img/student council.jpg" alt="Student Council Member for 4 years">
-        <div class="main-row">
-          <div class="row-text"><h6>Student Council Member</h6></div>
+
+        <div class="about-facts reveal">
+          <div class="fact">
+            <span>Education</span>
+            <strong>B.E. Computer Science & Engineering</strong>
+            <small>New Horizon College of Engineering · 1st Year</small>
+          </div>
+          <div class="fact">
+            <span>Academic</span>
+            <strong>CGPA — 9.75</strong>
+            <small>Current undergraduate performance</small>
+          </div>
+          <div class="fact">
+            <span>Location</span>
+            <strong>Bangalore, India</strong>
+            <small>New Horizon College of Engineering</small>
+          </div>
+          <div class="fact">
+            <span>Focus</span>
+            <strong>AI · Software · IoT</strong>
+            <small>Building practical, useful technology</small>
+          </div>
         </div>
-        <h3>Various Positions across the years.</h3>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="contact-text">
-      <h2>Contact Me</h2>
-      <h4>Let's Work Together</h4>
-      <p>I will help you in your next Project. Drop a message below.</p>
-      <ul class="contact-list">
-        <li>📍 Bangalore, Karnataka</li>
-        <li><a href="mailto:padmarajsanjay@gmail.com">padmarajsanjay@gmail.com</a></li>
-        <li>+91 6363257248</li>
-      </ul>
-      <div class="contact-icons">
-        <a href="https://www.linkedin.com/in/sanjay-padmaraj-044233247/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/123sanjaypadmaraj" target="_blank">GitHub</a>
+    <!-- WHAT I DO / SERVICE -->
+    <section class="services section" id="services">
+      <div class="section-intro centered reveal">
+        <p class="eyebrow">02 / WHAT I DO</p>
+        <h2>What can I build for you?</h2>
+        <p>My work sits at the intersection of software, intelligent systems and physical devices.</p>
       </div>
-    </div>
 
-    <!-- Replace action with Formspree if you want working form -->
-    <form class="contact-form" action="#" method="post">
-      <input name="name" placeholder="Your name" required>
-      <input name="email" type="email" placeholder="Your email" required>
-      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-      <button class="btn" type="submit">Send</button>
-    </form>
-  </section>
-</main>
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <span class="service-number">01</span>
+          <div class="service-icon">AI</div>
+          <h3>AI / LLM Applications</h3>
+          <p>RAG systems, LLM applications, NLP workflows, prompt engineering and local-model experimentation with Ollama.</p>
+          <div class="service-tags"><span>RAG</span><span>LLMs</span><span>NLP</span><span>Ollama</span></div>
+        </article>
 
-<a href="#top" class="top">↑</a>
-<script src="static/js/script.js"></script>
+        <article class="service-card reveal">
+          <span class="service-number">02</span>
+          <div class="service-icon">&lt;/&gt;</div>
+          <h3>Software & Web</h3>
+          <p>Python applications, data tools, responsive websites and practical interfaces using HTML, CSS and JavaScript.</p>
+          <div class="service-tags"><span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-number">03</span>
+          <div class="service-icon">IoT</div>
+          <h3>IoT & Embedded Systems</h3>
+          <p>Sensor integration and embedded prototypes that connect physical-world signals with intelligent software.</p>
+          <div class="service-tags"><span>IoT</span><span>Sensors</span><span>Embedded</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="resume section" id="resume">
+      <div class="section-intro reveal">
+        <p class="eyebrow">03 / RESUME</p>
+        <h2>My journey so far.</h2>
+      </div>
+
+      <div class="resume-grid">
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <span class="timeline-year">2025 — NOW</span>
+            <h3>B.E. Computer Science & Engineering</h3>
+            <p>New Horizon College of Engineering</p>
+            <small>Current CGPA: 9.75</small>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">LEADERSHIP</span>
+            <h3>STEM Club · NHCE</h3>
+            <p>Active member, 2025–2026</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">JUNE 2026</span>
+            <h3>International IEEE Conference — ICEMCSI</h3>
+            <p>Host</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">COMMUNITY</span>
+            <h3>BBMP Census of India 2027</h3>
+            <p>Volunteer</p>
+          </div>
+        </div>
+
+        <div class="resume-side reveal">
+          <div class="resume-panel">
+            <span class="panel-label">CORE STACK</span>
+            <div class="stack-list">
+              <span>Python</span><span>C (Basic)</span><span>RAG</span><span>LLM Applications</span>
+              <span>Ollama</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span>
+              <span>Streamlit</span><span>Matplotlib</span><span>HTML</span><span>CSS</span>
+              <span>JavaScript</span><span>Git</span><span>GitHub</span><span>IoT Systems</span>
+              <span>Sensor Integration</span>
+            </div>
+          </div>
+
+          <div class="resume-panel">
+            <span class="panel-label">CERTIFICATIONS</span>
+            <div class="cert-row">
+              <strong>Data Analytics by IITM</strong>
+              <span>EDA · Real-world data · Insights</span>
+            </div>
+            <div class="cert-row">
+              <strong>AI in Physics by IITM</strong>
+              <span>AI applications · Missing data</span>
+            </div>
+          </div>
+
+          <a class="button button-dark full-button" href="Sanjay_Padmaraj_Resume.pdf" target="_blank" rel="noopener">
+            View full resume <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects section" id="projects">
+      <div class="section-intro project-heading reveal">
+        <div>
+          <p class="eyebrow">04 / FEATURED PROJECTS</p>
+          <h2>Things I've built.</h2>
+        </div>
+        <a class="arrow-link" href="https://github.com/123sanjaypadmaraj" target="_blank" rel="noopener">View GitHub <span>↗</span></a>
+      </div>
+
+      <div class="project-grid">
+
+        <!-- Existing project retained -->
+        <article class="project-card project-large reveal">
+          <div class="project-image">
+            <img src="static/img/Data Querying Tool.jpg" alt="Data Querying Tool">
+            <span class="project-index">01</span>
+          </div>
+          <div class="project-meta"><span>WEB APP</span><span>EXISTING PROJECT</span></div>
+          <h3>Data Querying Tool</h3>
+          <p>Existing portfolio project retained as part of the new visual system.</p>
+        </article>
+
+        <!-- Resume project -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="static/img/Data Querying Tool.jpg" alt="AI Data Assistant">
+            <span class="project-index">02</span>
+          </div>
+          <div class="project-meta"><span>AI / DATA</span><span>GITHUB</span></div>
+          <h3>AI Data Assistant</h3>
+          <p>Natural-language interaction with datasets, automated EDA, visualizations and statistics using LLMs and Streamlit.</p>
+          <div class="project-bottom">
+            <span>Python · Ollama · Pandas · Matplotlib</span>
+            <a href="https://github.com/123sanjaypadmaraj/AI_Data_Assistant.git" target="_blank" rel="noopener">↗</a>
+          </div>
+        </article>
+
+        <!-- Resume project -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="static/img/Large Language Model.jpg" alt="RAG AI Chatbot">
+            <span class="project-index">03</span>
+          </div>
+          <div class="project-meta"><span>RAG / LLM</span><span>GITHUB</span></div>
+          <h3>AI Chatbot using RAG & LLMs</h3>
+          <p>Retrieval-Augmented Generation chatbot using Hugging Face LLMs, prompt engineering and deployment on the STEM Club website.</p>
+          <div class="project-bottom">
+            <span>RAG · Hugging Face · LLM</span>
+            <a href="https://github.com/123sanjaypadmaraj/stem-llm.git" target="_blank" rel="noopener">↗</a>
+          </div>
+        </article>
+
+        <!-- Resume project -->
+        <article class="project-card project-large reveal">
+          <div class="project-image">
+            <img src="static/img/linkedin.png" alt="LinkedIn Profile Matcher">
+            <span class="project-index">04</span>
+          </div>
+          <div class="project-meta"><span>AI / NLP</span><span>GITHUB</span></div>
+          <h3>LinkedIn Profile Matcher</h3>
+          <p>Evaluates LinkedIn profiles against job descriptions, extracts skills, generates compatibility scores and recommends missing skills and improvements.</p>
+          <div class="project-bottom">
+            <span>Python · NLP · Pandas · Streamlit · Scikit-learn · Ollama</span>
+            <a href="https://github.com/123sanjaypadmaraj/LinkedIn-Profile-Matcher.git" target="_blank" rel="noopener">↗</a>
+          </div>
+        </article>
+
+        <!-- Resume project -->
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="static/img/Portfolio.jpg" alt="STEM Club Website">
+            <span class="project-index">05</span>
+          </div>
+          <div class="project-meta"><span>WEB DEVELOPMENT</span><span>LIVE</span></div>
+          <h3>NHCE STEM Club Website</h3>
+          <p>Official responsive STEM Club website built using WordPress and maintained with the department.</p>
+          <div class="project-bottom">
+            <span>WordPress · Responsive Web</span>
+            <a href="https://newhorizonindia.edu/co-curricular/stem/" target="_blank" rel="noopener">↗</a>
+          </div>
+        </article>
+
+        <!-- Patent project -->
+        <article class="project-card reveal patent-project">
+          <div class="project-image">
+            <img src="static/img/Experience.jpg" alt="Smart Blind Stick">
+            <span class="project-index">06</span>
+          </div>
+          <div class="project-meta"><span>AI + IOT</span><span>PATENT</span></div>
+          <h3>Smart Blind Stick</h3>
+          <p>AI and IoT-enabled assistive device integrating obstacle detection, navigation assistance, sensors and embedded systems, with dual mobile applications for users and caregivers.</p>
+          <div class="project-bottom">
+            <span>Provisional Patent Holder</span>
+            <span>✦</span>
+          </div>
+        </article>
+
+        <!-- Existing projects retained -->
+        <article class="project-card compact reveal">
+          <div class="project-image"><img src="static/img/Large Language Model.jpg" alt="Large Language Model Experiment"><span class="project-index">07</span></div>
+          <div class="project-meta"><span>AI</span><span>EXISTING</span></div>
+          <h3>Large Language Model Experiment</h3>
+        </article>
+
+        <article class="project-card compact reveal">
+          <div class="project-image"><img src="static/img/gesture.jpg" alt="Gesture Controlled Actions"><span class="project-index">08</span></div>
+          <div class="project-meta"><span>AI</span><span>EXISTING</span></div>
+          <h3>Gesture Controlled Actions on a Computer</h3>
+        </article>
+
+        <article class="project-card compact reveal">
+          <div class="project-image"><img src="static/img/mcp server.jpg" alt="MCP Server"><span class="project-index">09</span></div>
+          <div class="project-meta"><span>AI</span><span>EXISTING</span></div>
+          <h3>MCP Server</h3>
+        </article>
+
+        <article class="project-card compact reveal">
+          <div class="project-image"><img src="static/img/Portfolio.jpg" alt="Personal Portfolio Website"><span class="project-index">10</span></div>
+          <div class="project-meta"><span>WEB</span><span>EXISTING</span></div>
+          <h3>Personal Portfolio Website</h3>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements section" id="achievements">
+      <div class="section-intro centered reveal">
+        <p class="eyebrow">05 / ACHIEVEMENTS</p>
+        <h2>Proof that I like to compete.</h2>
+      </div>
+
+      <div class="achievement-list">
+        <div class="achievement-row reveal">
+          <span>01</span><strong>1st Place</strong><p>UDAAN Intra-Institutional Business Plan Competition 2026</p><small>2026</small>
+        </div>
+        <div class="achievement-row reveal">
+          <span>02</span><strong>1st Place</strong><p>E=mc² STEM Expo 2026</p><small>2026</small>
+        </div>
+        <div class="achievement-row reveal">
+          <span>03</span><strong>2nd Place</strong><p>QuantumX Intercollege Hardware Tech Expo 2026</p><small>2026</small>
+        </div>
+        <div class="achievement-row reveal">
+          <span>04</span><strong>3rd Place</strong><p>Nexgen Convergence Hardware Hustle — Tech Expo</p><small>2026</small>
+        </div>
+        <div class="achievement-row reveal">
+          <span>05</span><strong>1st Place</strong><p>Algo Relay — NHCE MCA Department</p><small>2026</small>
+        </div>
+        <div class="achievement-row patent-row reveal">
+          <span>06</span><strong>Patent</strong><p>Provisional Patent Holder — Smart Blind Stick for Visually Impaired Individuals</p><small>AI + IoT</small>
+        </div>
+        <!-- Existing achievement retained -->
+        <div class="achievement-row reveal">
+          <span>07</span><strong>Winner</strong><p>Badminton Tournament Winner</p><small>Existing</small>
+        </div>
+        <!-- Existing achievement retained -->
+        <div class="achievement-row reveal">
+          <span>08</span><strong>Creative</strong><p>Passionate Keyboard Player</p><small>Existing</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSITION OF RESPONSIBILITY -->
+    <section class="por section" id="por">
+      <div class="section-intro reveal">
+        <p class="eyebrow">06 / LEADERSHIP</p>
+        <h2>Beyond the code.</h2>
+      </div>
+
+      <div class="por-grid">
+        <article class="por-card reveal">
+          <span>STEM CLUB · NHCE</span>
+          <h3>Active Member</h3>
+          <p>2025–2026</p>
+        </article>
+        <article class="por-card reveal">
+          <span>IEEE · ICEMCSI</span>
+          <h3>Conference Host</h3>
+          <p>International IEEE Conference · June 2026</p>
+        </article>
+        <article class="por-card reveal">
+          <span>COMMUNITY</span>
+          <h3>BBMP Census Volunteer</h3>
+          <p>Census of India 2027</p>
+        </article>
+        <!-- Existing PoR retained -->
+        <article class="por-card reveal">
+          <span>SPORTS CLUB</span>
+          <h3>Badminton Club Coordinator</h3>
+          <p>Existing portfolio role</p>
+        </article>
+        <!-- Existing PoR retained -->
+        <article class="por-card reveal">
+          <span>STUDENT COUNCIL</span>
+          <h3>Student Council Member</h3>
+          <p>Various positions across the years</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">07 / CONTACT</p>
+        <h2>Let's start a<br><em>project together?</em></h2>
+        <p class="contact-copy">
+          Have an idea, collaboration, hackathon project or simply want to say hello?
+          I'm always interested in building something useful.
+        </p>
+
+        <div class="contact-details">
+          <a href="mailto:padmarajsanjay@gmail.com">padmarajsanjay@gmail.com</a>
+          <a href="tel:+916363257248">+91 6363257248</a>
+          <span>Bangalore, India</span>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/123sanjaypadmaraj" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/sanjay-padmaraj-044233247/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="Sanjay_Padmaraj_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+        </div>
+      </div>
+
+      <!-- Replace action with Formspree if you want working form -->
+      <form class="contact-form reveal" action="#" method="post">
+        <div class="form-heading">
+          <span>DROP A MESSAGE</span>
+          <strong>I'd love to hear from you.</strong>
+        </div>
+        <label>Your name<input name="name" placeholder="Your name" required></label>
+        <label>Your email<input name="email" type="email" placeholder="Your email" required></label>
+        <label>Your message<textarea name="message" rows="5" placeholder="Tell me about your idea..." required></textarea></label>
+        <button class="button button-dark" type="submit">Send message <span>↗</span></button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#top">S<span>.</span>P</a>
+    <p>© 2026 Sanjay Padmaraj. Built with code & curiosity.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="static/js/script.js"></script>
 </body>
 </html>
