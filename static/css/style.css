@@ -47,7 +47,10 @@ button{border:0}
 .navbar a:hover,.navbar a.active{color:var(--ink)}
 .navbar a.active:after{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--gold);margin:0 0 2px 5px}
 .menu-toggle{display:none;background:transparent;cursor:pointer}
-.menu-toggle span{display:block;width:25px;height:2px;background:var(--ink);margin:5px}
+.menu-toggle span{display:block;width:25px;height:2px;background:var(--ink);margin:5px;transition:.25s ease}
+.menu-toggle.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-toggle.active span:nth-child(2){opacity:0}
+.menu-toggle.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 .eyebrow{
   color:var(--gold);font-size:11px;font-weight:700;letter-spacing:2.3px;
   text-transform:uppercase;
@@ -207,6 +210,11 @@ button{border:0}
 }
 .contact-form input:focus,.contact-form textarea:focus{border-color:var(--gold)}
 .contact-form .button{margin-top:2px}
+.contact-form .button:disabled{opacity:.6;cursor:not-allowed}
+.form-status{font-size:12px;min-height:16px}
+.form-status.is-success{color:var(--gold)}
+.form-status.is-error{color:#e37b6a}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
 footer{
   width:min(var(--max),calc(100% - 80px));margin:auto;padding:22px 0 26px;
   border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;

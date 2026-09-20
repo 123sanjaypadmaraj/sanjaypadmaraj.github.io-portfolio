@@ -1,32 +1,55 @@
+# Sanjay Padmaraj — Portfolio
 
-# Flask Portfolio — GfG-inspired
+Personal portfolio site for Sanjay Padmaraj — CSE student, software developer, and AI/ML + IoT builder. Static HTML/CSS/JS, deployed via GitHub Pages.
 
-A lightweight Flask portfolio website with sections for Home, About, Experience, Skills, Achievements, Projects, PoR, and Contact (with SQLite message storage).
+**Live site:** https://123sanjaypadmaraj.github.io/sanjaypadmaraj.github.io-portfolio/
 
-## Quickstart
+## Sections
 
-```bash
-# 1) Create a virtual env (recommended)
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+- **Home** — intro and quick links
+- **About** — education, focus areas
+- **What I Do** — AI/LLM, software & web, IoT/embedded
+- **Resume** — timeline, core stack, certifications, and a link to the [full resume PDF](Sanjay_Padmaraj_Resume.pdf)
+- **Projects** — featured builds with links to GitHub/live demos
+- **Achievements** — competitions, patent, hackathons
+- **Leadership** — clubs, conferences, community roles
+- **Contact** — email, phone, socials, and a message form
 
-# 2) Install deps
-pip install flask
+## Structure
 
-# 3) Run
-python app.py
-# open http://127.0.0.1:5000
+```
+index.html              Single-page site (all sections)
+404.html                 Branded not-found page for GitHub Pages
+robots.txt, sitemap.xml  Search-engine crawling/indexing
+Sanjay_Padmaraj_Resume.pdf   Resume, linked from the Resume and Contact sections
+static/
+  css/style.css          All styling
+  js/script.js           Mobile nav, scroll reveal, active-section highlighting, contact form
+  img/                    Project/profile images, favicon.svg, og-cover.jpg (social preview)
 ```
 
-- Edit `data/content.json` after first run to update text, skills, and projects.
-- Messages submitted via the form are stored in `data/messages.db`.
-- Dev-only inbox: `http://127.0.0.1:5000/admin/messages`
+## Contact form
+
+The form posts to [FormSubmit](https://formsubmit.co/) (`static/js/script.js` submits it via `fetch` to their AJAX endpoint, no backend needed) at `padmarajsanjay@gmail.com`. **First submission after a fresh deploy requires a one-time activation:** FormSubmit emails an "Activation Required" link to that address the first time a message is sent from a new domain — click it once, then all later submissions deliver normally.
+
+## Running locally
+
+No build step or dependencies — just open the file directly, or serve it so relative asset paths resolve cleanly:
+
+```bash
+# Option 1: open directly
+start index.html   # Windows
+open index.html     # macOS
+
+# Option 2: serve locally
+python -m http.server 8000
+# then visit http://localhost:8000
+```
+
+## Editing content
+
+Everything lives directly in `index.html` — update text, project cards, and links there. Swap images in `static/img/`, and replace `Sanjay_Padmaraj_Resume.pdf` with an updated resume (keep the filename, or update the links in `index.html` if you rename it).
 
 ## Deploy
 
-- **Render / Railway / Fly.io**: Create a new web service with `python app.py`.
-- **GitHub Pages** is static-only; for the Flask version use a host that supports Python apps.
-
-## Notes
-
-This project is *inspired by* the structure in the GfG article but implemented from scratch in Flask with original styling.
+Hosted as-is on **GitHub Pages** from this repo (`sanjaypadmaraj.github.io-portfolio`) — no build process required. Push to `main` and Pages serves the updated site.
