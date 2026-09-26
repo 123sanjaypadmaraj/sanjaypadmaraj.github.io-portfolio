@@ -1,4 +1,16 @@
 
+// Custom cursor dot/ring (shown for precise pointers only, see CSS `@media (pointer:fine)`)
+const cursorDot = document.querySelector('.cursor-dot');
+const cursorRing = document.querySelector('.cursor-ring');
+if (cursorDot && cursorRing && window.matchMedia('(pointer: fine)').matches) {
+  window.addEventListener('mousemove', (event) => {
+    cursorDot.style.left = `${event.clientX}px`;
+    cursorDot.style.top = `${event.clientY}px`;
+    cursorRing.style.left = `${event.clientX}px`;
+    cursorRing.style.top = `${event.clientY}px`;
+  });
+}
+
 document.addEventListener('scroll', () => {
   const header = document.querySelector('header');
   if (window.scrollY > 12) header.style.boxShadow = '0 4px 20px rgba(0,0,0,.2)';
