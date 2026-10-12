@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 376" role="img" aria-label="CampusOS: one platform for campus life">
+  <rect width="800" height="376" fill="#0a0907"/>
+  <g fill="none" stroke="#d4af37" stroke-opacity=".16">
+    <circle cx="700" cy="60" r="170"/><circle cx="700" cy="60" r="110"/><circle cx="700" cy="60" r="50"/>
+  </g>
+  <text x="56" y="98" font-family="Space Grotesk, Arial, sans-serif" font-size="48" font-weight="700" fill="#f4ecd8">Campus<tspan fill="#d4af37">OS</tspan></text>
+  <text x="58" y="128" font-family="DM Sans, Arial, sans-serif" font-size="18" fill="#9c9486">One platform for campus life</text>
+  <g font-family="DM Sans, Arial, sans-serif" font-size="16" fill="#f4ecd8" stroke-width="1">
+    <g transform="translate(56,152)"><rect width="216" height="44" fill="#161410" stroke="#d4af37" stroke-opacity=".4"/><text x="16" y="28">Events &amp; Clubs</text></g>
+    <g transform="translate(292,152)"><rect width="216" height="44" fill="#161410" stroke="#d4af37" stroke-opacity=".4"/><text x="16" y="28">Community Feed</text></g>
+    <g transform="translate(528,152)"><rect width="216" height="44" fill="#161410" stroke="#d4af37" stroke-opacity=".4"/><text x="16" y="28">Hackathon Teams</text></g>
+    <g transform="translate(56,210)"><rect width="216" height="44" fill="#161410" stroke="#d4af37" stroke-opacity=".4"/><text x="16" y="28">Resource Booking</text></g>
+    <g transform="translate(292,210)"><rect width="216" height="44" fill="#161410" stroke="#d4af37" stroke-opacity=".4"/><text x="16" y="28">Issue Reporting</text></g>
+    <g transform="translate(528,210)"><rect width="216" height="44" fill="#161410" stroke="#d4af37" stroke-opacity=".4"/><text x="16" y="28">Campus Store</text></g>
+  </g>
+  <text x="58" y="316" font-family="DM Sans, Arial, sans-serif" font-size="14" letter-spacing="2" fill="#d4af37">REACT · TYPESCRIPT · SUPABASE · PLAYWRIGHT</text>
+</svg>

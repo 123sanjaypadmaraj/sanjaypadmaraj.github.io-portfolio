@@ -1,0 +1,41 @@
+name: Link check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * 1'
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      # Checked out into a subfolder so 404.html's root-absolute
+      # /sanjaypadmaraj.github.io-portfolio/... paths resolve via --root-dir.
+      - uses: actions/checkout@v4
+        with:
+          path: sanjaypadmaraj.github.io-portfolio
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --root-dir ${{ github.workspace }}
+            --exclude 'linkedin\.com'
+            --exclude 'formsubmit\.co'
+            --exclude '^mailto:'
+            --exclude '^tel:'
+            sanjaypadmaraj.github.io-portfolio/index.html
+            sanjaypadmaraj.github.io-portfolio/404.html
+          fail: true
+
+  html-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate HTML (errors only)
+        run: >-
+          docker run --rm -v "$PWD:/site" ghcr.io/validator/validator:latest
+          vnu --errors-only /site/index.html /site/404.html
