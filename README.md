@@ -6,13 +6,11 @@ Personal portfolio site for Sanjay Padmaraj — CSE student, software developer,
 
 ## Sections
 
-- **Home** — intro and quick links
-- **About** — education, focus areas
-- **What I Do** — AI/LLM, software & web, IoT/embedded
-- **Resume** — timeline, core stack, certifications, and a link to the [full resume PDF](Sanjay_Padmaraj_Resume.pdf)
-- **Projects** — featured builds with links to GitHub/live demos
+- **Home** — intro, at-a-glance stats, resume and contact links
+- **Projects** — five featured builds, then a collapsible list with category filters
+- **Experience & Skills** — education, STEM/MAD club work, IEEE host, skills, certifications
 - **Achievements** — competitions, patent, hackathons
-- **Leadership** — clubs, conferences, community roles
+- **About** — background and quick facts
 - **Contact** — email, phone, socials, and a message form
 
 ## Structure

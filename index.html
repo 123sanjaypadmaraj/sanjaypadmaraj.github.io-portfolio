@@ -67,12 +67,10 @@
 
     <nav class="navbar" id="site-nav" aria-label="Primary">
       <a class="active" href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">What I Do</a>
-      <a href="#resume">Resume</a>
       <a href="#projects">Projects</a>
+      <a href="#resume">Experience &amp; Skills</a>
       <a href="#achievements">Achievements</a>
-      <a href="#por">Leadership</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -91,14 +89,20 @@
 
         <p class="hero-description">
           Computer Science student at New Horizon College of Engineering (class of 2029),
-          building <strong>full-stack web apps, LLM tools and IoT prototypes</strong> with
-          tests and CI behind them. <strong>Open to software engineering internships.</strong>
+          building <strong>multi-agent LLM apps, full-stack web apps and IoT prototypes</strong>
+          with tests and CI behind them. <strong>Open to software engineering internships.</strong>
         </p>
+        <ul class="hero-stats" aria-label="At a glance">
+          <li><strong>9.75</strong><span>CGPA</span></li>
+          <li><strong>500+</strong><span>tests in Kotlex CI</span></li>
+          <li><strong>1</strong><span>provisional patent</span></li>
+          <li><strong>5</strong><span>podium finishes</span></li>
+        </ul>
 
         <div class="hero-actions">
           <a class="button button-dark" href="#projects">Check my projects <span>↗</span></a>
-          <a class="text-link" href="Sanjay_Padmaraj_Resume.pdf" target="_blank" rel="noopener">Resume <span>↗</span></a>
-          <a class="text-link" href="mailto:padmarajsanjay@gmail.com">Email me <span>↗</span></a>
+          <a class="text-link" href="Sanjay_Padmaraj_Resume.pdf" target="_blank" rel="noopener">Download resume <span>↗</span></a>
+          <a class="text-link" href="#contact">Get in touch <span>↓</span></a>
         </div>
       </div>
 
@@ -122,174 +126,13 @@
       <div class="scroll-note"><span></span> Scroll to explore</div>
     </section>
 
-    <!-- ABOUT -->
-    <section class="about section" id="about">
-      <div class="section-intro reveal">
-        <p class="eyebrow">01 / ABOUT</p>
-        <h2>Who am I?</h2>
-      </div>
-
-      <div class="about-content">
-        <div class="about-lead reveal">
-          <p class="large-copy">
-            I'm a Computer Science student who learns by shipping: full-stack apps
-            in TypeScript and Python, with the tests and CI to keep them working.
-          </p>
-          <p>
-            Most of what I build starts from a problem on campus: clubs juggling
-            sign-ups in spreadsheets, classmates stuck on C pointers, a cane that
-            can't warn its user. Off-screen I play badminton and the keyboard.
-          </p>
-          <a class="arrow-link" href="#projects">See what I've built <span>→</span></a>
-        </div>
-
-        <div class="about-facts reveal">
-          <div class="fact">
-            <span>Education</span>
-            <strong>B.E. Computer Science & Engineering</strong>
-            <small>New Horizon College of Engineering · Expected 2029</small>
-          </div>
-          <div class="fact">
-            <span>Academic</span>
-            <strong>CGPA — 9.75</strong>
-            <small>Current undergraduate performance</small>
-          </div>
-          <div class="fact">
-            <span>Location</span>
-            <strong>Bangalore, India</strong>
-            <small>Open to software engineering internships</small>
-          </div>
-          <div class="fact">
-            <span>Focus</span>
-            <strong>AI · Software · IoT</strong>
-            <small>Building practical, useful technology</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHAT I DO / SERVICE -->
-    <section class="services section" id="services">
-      <div class="section-intro centered reveal">
-        <p class="eyebrow">02 / WHAT I DO</p>
-        <h2>What I work on.</h2>
-        <p>My work sits at the intersection of software, intelligent systems and physical devices.</p>
-      </div>
-
-      <div class="service-grid">
-        <article class="service-card reveal">
-          <span class="service-number">01</span>
-          <div class="service-icon">AI</div>
-          <h3>AI / LLM Applications</h3>
-          <p>RAG systems, LLM applications, NLP workflows, prompt engineering and local-model experimentation with Ollama.</p>
-          <div class="service-tags"><span>RAG</span><span>LLMs</span><span>NLP</span><span>Ollama</span></div>
-        </article>
-
-        <article class="service-card reveal">
-          <span class="service-number">02</span>
-          <div class="service-icon">&lt;/&gt;</div>
-          <h3>Full-Stack Web</h3>
-          <p>Full-stack apps in React and Next.js on PostgreSQL and Supabase, with row-level security, unit and end-to-end tests, and CI on every push.</p>
-          <div class="service-tags"><span>TypeScript</span><span>React</span><span>Next.js</span><span>PostgreSQL</span><span>Python</span></div>
-        </article>
-
-        <article class="service-card reveal">
-          <span class="service-number">03</span>
-          <div class="service-icon">IoT</div>
-          <h3>IoT & Embedded Systems</h3>
-          <p>Sensor integration and embedded prototypes that connect physical-world signals with intelligent software.</p>
-          <div class="service-tags"><span>IoT</span><span>Sensors</span><span>Embedded</span></div>
-        </article>
-      </div>
-    </section>
-
-    <!-- RESUME -->
-    <section class="resume section" id="resume">
-      <div class="section-intro reveal">
-        <p class="eyebrow">03 / RESUME</p>
-        <h2>My journey so far.</h2>
-      </div>
-
-      <div class="resume-grid">
-        <div class="timeline reveal">
-          <div class="timeline-item">
-            <span class="timeline-year">2025 — NOW</span>
-            <h3>B.E. Computer Science & Engineering</h3>
-            <p>New Horizon College of Engineering</p>
-            <small>Current CGPA: 9.75</small>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-year">CLASS XI – XII</span>
-            <h3>Higher Secondary Education</h3>
-            <p>Geetanjali Olympiad School</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-year">LEADERSHIP</span>
-            <h3>STEM Club · NHCE</h3>
-            <p>Active member, 2025–2026</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-year">JUNE 2026</span>
-            <h3>International IEEE Conference — ICEMCSI</h3>
-            <p>Host</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-year">COMMUNITY</span>
-            <h3>BBMP Census of India 2027</h3>
-            <p>Volunteer</p>
-          </div>
-        </div>
-
-        <div class="resume-side reveal">
-          <div class="resume-panel">
-            <span class="panel-label">CORE STACK</span>
-            <div class="stack-list">
-              <span>Python</span><span>TypeScript</span><span>JavaScript</span><span>C</span>
-              <span>React</span><span>Next.js</span><span>Node.js</span><span>FastAPI</span><span>Flask</span><span>Supabase</span><span>PostgreSQL</span><span>Docker</span>
-              <span>RAG</span><span>LLM Applications</span><span>Ollama</span><span>Sentence-Transformers</span>
-              <span>Pandas</span><span>NumPy</span><span>Scikit-learn</span><span>Streamlit</span>
-              <span>Playwright</span><span>GitHub Actions</span><span>Git</span><span>IoT Systems</span>
-              <span>Sensor Integration</span>
-            </div>
-          </div>
-
-          <div class="resume-panel">
-            <span class="panel-label">CERTIFICATIONS</span>
-            <div class="cert-row">
-              <strong>Data Analytics by IITM</strong>
-              <span>EDA · Real-world data · Insights</span>
-            </div>
-            <div class="cert-row">
-              <strong>AI in Physics by IITM</strong>
-              <span>AI applications · Missing data</span>
-            </div>
-            <div class="cert-row">
-              <strong>C Programming by IIT Bombay</strong>
-              <span>Core programming fundamentals</span>
-            </div>
-          </div>
-
-          <div class="resume-panel">
-            <span class="panel-label">SOFT SKILLS</span>
-            <div class="cert-row">
-              <strong>Multilingual Communication</strong>
-              <span>Proficient in 3 Indian languages & English</span>
-            </div>
-          </div>
-
-          <a class="button button-dark full-button" href="Sanjay_Padmaraj_Resume.pdf" target="_blank" rel="noopener">
-            View full resume <span>↗</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
     <!-- PROJECTS -->
     <section class="projects section" id="projects">
       <div class="section-intro project-heading reveal">
         <div>
-          <p class="eyebrow">04 / FEATURED PROJECTS</p>
+          <p class="eyebrow">02 / PROJECTS</p>
           <h2>Things I've built.</h2>
+          <p class="section-sub">Five featured builds first, then the rest. Filter by topic or expand the full list.</p>
         </div>
         <a class="arrow-link" href="https://github.com/123sanjaypadmaraj" target="_blank" rel="noopener">View GitHub <span>↗</span></a>
       </div>
@@ -298,27 +141,8 @@
 
         <article class="project-card project-large reveal">
           <div class="project-image">
-            <img src="static/img/campusos.svg" alt="CampusOS: one platform for campus life" loading="lazy" decoding="async">
-            <span class="project-index">01</span>
-          </div>
-          <div class="project-meta"><span>FULL-STACK WEB APP</span><span>GITHUB</span></div>
-          <h3>CampusOS</h3>
-          <p>Unified campus-life platform: events, clubs, a community feed, hackathon team-matching, resource booking and issue reporting. Supabase backend, Razorpay payments (test mode), and Jest + Playwright tests with GitHub Actions CI.</p>
-          <ul class="project-points">
-            <li>Six campus workflows in one app, replacing chat groups, forms and separate portals.</li>
-            <li>PostgreSQL schema on Supabase; Razorpay orders and webhooks in Edge Functions (test mode).</li>
-            <li>Five-stage GitHub Actions pipeline: lint, typecheck, unit tests, build, end-to-end.</li>
-          </ul>
-          <div class="project-bottom">
-            <span>React · TypeScript · Supabase · Tailwind · Playwright</span>
-            <a href="https://github.com/123sanjaypadmaraj/CampusOS" target="_blank" rel="noopener" aria-label="CampusOS — GitHub repository (opens in new tab)" class="code-link">View code ↗</a>
-          </div>
-        </article>
-
-        <article class="project-card project-large reveal">
-          <div class="project-image">
             <img src="static/img/kotlex.svg" alt="Kotlex: a voice note in, a fact-checked multilingual campaign out" loading="lazy" decoding="async">
-            <span class="project-index">02</span>
+            <span class="project-index">01</span>
           </div>
           <div class="project-meta"><span>AI AGENTS · HACKATHON</span><span>GITHUB</span></div>
           <h3>Kotlex</h3>
@@ -334,29 +158,29 @@
           </div>
         </article>
 
-        <article class="project-card reveal">
+        <article class="project-card project-large reveal">
           <div class="project-image">
-            <img src="static/img/club-hub.svg" alt="Club Hub" loading="lazy" decoding="async">
-            <span class="project-index">03</span>
+            <img src="static/img/campusos.svg" alt="CampusOS: one platform for campus life" loading="lazy" decoding="async">
+            <span class="project-index">02</span>
           </div>
           <div class="project-meta"><span>FULL-STACK WEB APP</span><span>GITHUB</span></div>
-          <h3>Club Hub</h3>
-          <p>One app for ~20 co-curricular clubs: public directory, event registration with waitlist and QR tickets, check-in, feedback, and a super-admin dashboard comparing club performance. Row-level security protects participant data.</p>
+          <h3>CampusOS</h3>
+          <p>Unified campus-life platform: events, clubs, a community feed, hackathon team-matching, resource booking and issue reporting. Supabase backend, Razorpay payments (test mode), and Jest + Playwright tests with GitHub Actions CI.</p>
           <ul class="project-points">
-            <li>Three roles: visitor, club lead and admin, each with its own views.</li>
-            <li>Participant data locked down with Postgres row-level security, even against direct API calls.</li>
-            <li>Race-safe capacity checks and waitlists written in SQL.</li>
+            <li>Six campus workflows in one app, replacing chat groups, forms and separate portals.</li>
+            <li>PostgreSQL schema on Supabase; Razorpay orders and webhooks in Edge Functions (test mode).</li>
+            <li>Five-stage GitHub Actions pipeline: lint, typecheck, unit tests, build, end-to-end.</li>
           </ul>
           <div class="project-bottom">
-            <span>Next.js · TypeScript · Supabase · Vitest</span>
-            <a href="https://github.com/123sanjaypadmaraj/Club-App" target="_blank" rel="noopener" aria-label="Club Hub — GitHub repository (opens in new tab)" class="code-link">View code ↗</a>
+            <span>React · TypeScript · Supabase · Tailwind · Playwright</span>
+            <a href="https://github.com/123sanjaypadmaraj/CampusOS" target="_blank" rel="noopener" aria-label="CampusOS — GitHub repository (opens in new tab)" class="code-link">View code ↗</a>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-image">
             <img src="static/img/c-visualizer.svg" alt="C Visualizer" loading="lazy" decoding="async">
-            <span class="project-index">04</span>
+            <span class="project-index">03</span>
           </div>
           <div class="project-meta"><span>EDUCATION / WEB</span><span>GITHUB</span></div>
           <h3>C Visualizer</h3>
@@ -375,7 +199,7 @@
         <article class="project-card reveal">
           <div class="project-image">
             <img src="static/img/ai-wordpress-builder.svg" alt="AI WordPress Builder" loading="lazy" decoding="async">
-            <span class="project-index">05</span>
+            <span class="project-index">04</span>
           </div>
           <div class="project-meta"><span>AI / FULL-STACK</span><span>GITHUB</span></div>
           <h3>AI WordPress Builder</h3>
@@ -394,7 +218,7 @@
         <article class="project-card reveal">
           <div class="project-image">
             <img src="static/img/engine-digital-twin.svg" alt="Aero Engine Digital Twin" loading="lazy" decoding="async">
-            <span class="project-index">06</span>
+            <span class="project-index">05</span>
           </div>
           <div class="project-meta"><span>SIH · IOT / DATA</span><span>GITHUB</span></div>
           <h3>Aero Engine Digital Twin</h3>
@@ -412,8 +236,27 @@
 
         <div class="grid-divider reveal">
           <p class="eyebrow">MORE PROJECTS</p>
-          <p>Smaller builds, experiments and hardware work.</p>
+          <p>Club Hub, Smart Bandage and Accident Detection (from my resume), plus smaller experiments and hardware work.</p>
         </div>
+
+        <article class="project-card reveal">
+          <div class="project-image">
+            <img src="static/img/club-hub.svg" alt="Club Hub" loading="lazy" decoding="async">
+            <span class="project-index">06</span>
+          </div>
+          <div class="project-meta"><span>FULL-STACK WEB APP</span><span>GITHUB</span></div>
+          <h3>Club Hub</h3>
+          <p>One app for ~20 co-curricular clubs: public directory, event registration with waitlist and QR tickets, check-in, feedback, and a super-admin dashboard comparing club performance. Row-level security protects participant data.</p>
+          <ul class="project-points">
+            <li>Three roles: visitor, club lead and admin, each with its own views.</li>
+            <li>Participant data locked down with Postgres row-level security, even against direct API calls.</li>
+            <li>Race-safe capacity checks and waitlists written in SQL.</li>
+          </ul>
+          <div class="project-bottom">
+            <span>Next.js · TypeScript · Supabase · Vitest</span>
+            <a href="https://github.com/123sanjaypadmaraj/Club-App" target="_blank" rel="noopener" aria-label="Club Hub — GitHub repository (opens in new tab)" class="code-link">View code ↗</a>
+          </div>
+        </article>
 
         <article class="project-card reveal">
           <div class="project-image">
@@ -610,7 +453,7 @@
           <h3>Smart Blind Stick</h3>
           <p>AI and IoT-enabled assistive device integrating obstacle detection, navigation assistance, sensors and embedded systems, with dual mobile applications for users and caregivers.</p>
           <div class="project-bottom">
-            <span>Provisional Patent Holder</span>
+            <span>Provisional patent filed</span>
             <span>✦</span>
           </div>
         </article>
@@ -638,81 +481,147 @@
       </div>
     </section>
 
+    <!-- EXPERIENCE & SKILLS -->
+    <section class="resume section" id="resume">
+      <div class="section-intro reveal">
+        <p class="eyebrow">03 / EXPERIENCE &amp; SKILLS</p>
+        <h2>Where I've worked, what I use.</h2>
+      </div>
+
+      <div class="resume-grid">
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <span class="timeline-year">2025 — 2029 (EXPECTED)</span>
+            <h3>B.E. Computer Science &amp; Engineering</h3>
+            <p>New Horizon College of Engineering, Bangalore</p>
+            <small>CGPA: 9.75 / 10</small>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2025 — 2026</span>
+            <h3>Website &amp; AI Chatbot Developer · STEM Club</h3>
+            <p>Built and maintain the club's official WordPress site on the college domain, and built and deployed a RAG chatbot on Hugging Face LLMs on the live site to answer student queries.</p>
+            <small><a href="https://newhorizonindia.edu/co-curricular/stem/" target="_blank" rel="noopener">newhorizonindia.edu/co-curricular/stem ↗</a></small>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">MAD CLUB</span>
+            <h3>Website Developer · NHCE</h3>
+            <p>Built the club's official website.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">JUNE 2026</span>
+            <h3>Host · International IEEE Conference (ICEMCSI)</h3>
+            <p>New Horizon College of Engineering</p>
+          </div>
+        </div>
+
+        <div class="resume-side reveal">
+          <div class="resume-panel">
+            <span class="panel-label">SKILLS</span>
+            <div class="skill-group"><strong>Proficient</strong><div class="stack-list"><span>Python</span><span>C</span><span>SQL (MySQL)</span></div></div>
+            <div class="skill-group"><strong>Familiar</strong><div class="stack-list"><span>Java</span><span>HTML/CSS</span></div></div>
+            <div class="skill-group"><strong>AI / ML</strong><div class="stack-list"><span>RAG</span><span>LLM &amp; multi-agent apps (LangGraph)</span><span>Hugging Face</span><span>Sentence-Transformers</span><span>scikit-learn</span><span>Pandas</span><span>NumPy</span></div></div>
+            <div class="skill-group"><strong>Tools</strong><div class="stack-list"><span>GitHub</span><span>Docker</span></div></div>
+          </div>
+
+          <div class="resume-panel">
+            <span class="panel-label">CERTIFICATIONS</span>
+            <div class="cert-row"><strong>Data Analytics</strong><span>IIT Madras</span></div>
+            <div class="cert-row"><strong>AI in Physics</strong><span>IIT Madras</span></div>
+            <div class="cert-row"><strong>C Programming</strong><span>IIT Bombay</span></div>
+          </div>
+
+          <a class="button button-dark full-button" href="Sanjay_Padmaraj_Resume.pdf" target="_blank" rel="noopener">
+            Download full resume (PDF) <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- ACHIEVEMENTS -->
     <section class="achievements section" id="achievements">
       <div class="section-intro centered reveal">
-        <p class="eyebrow">05 / ACHIEVEMENTS</p>
+        <p class="eyebrow">04 / ACHIEVEMENTS</p>
         <h2>Proof that I like to compete.</h2>
       </div>
 
       <div class="achievement-list">
-        <div class="achievement-row reveal">
-          <span>01</span><strong>1st Place</strong><p>UDAAN Intra-Institutional Business Plan Competition 2026</p><small>2026</small>
+        <div class="achievement-row patent-row reveal">
+          <span>01</span><strong>Patent</strong><p>Provisional patent filed: Smart Blind Stick, an AI + IoT assistive cane with obstacle detection and user &amp; caregiver apps</p><small>AI + IoT</small>
         </div>
         <div class="achievement-row reveal">
           <span>02</span><strong>1st Place</strong><p>E=mc² STEM Expo 2026</p><small>2026</small>
         </div>
         <div class="achievement-row reveal">
-          <span>03</span><strong>2nd Place</strong><p>QuantumX Intercollege Hardware Tech Expo 2026</p><small>2026</small>
+          <span>03</span><strong>1st Place</strong><p>UDAAN Business Plan Competition 2026</p><small>2026</small>
         </div>
         <div class="achievement-row reveal">
-          <span>04</span><strong>3rd Place</strong><p>Nexgen Convergence Hardware Hustle — Tech Expo</p><small>—</small>
+          <span>04</span><strong>1st Place</strong><p>Algo Relay — NHCE MCA Department</p><small>—</small>
         </div>
         <div class="achievement-row reveal">
-          <span>05</span><strong>1st Place</strong><p>Algo Relay — NHCE MCA Department</p><small>—</small>
-        </div>
-        <div class="achievement-row patent-row reveal">
-          <span>06</span><strong>Patent</strong><p>Provisional Patent Holder — Smart Blind Stick for Visually Impaired Individuals</p><small>AI + IoT</small>
+          <span>05</span><strong>2nd Place</strong><p>QuantumX Intercollege Hardware Tech Expo 2026</p><small>2026</small>
         </div>
         <div class="achievement-row reveal">
-          <span>07</span><strong>Finalist</strong><p>Smart India Hackathon (SIH) — NHCE</p><small>2026</small>
+          <span>06</span><strong>3rd Place</strong><p>Nexgen Convergence Hardware Hustle Tech Expo</p><small>—</small>
         </div>
         <div class="achievement-row reveal">
-          <span>08</span><strong>Winner</strong><p>Badminton Tournament Winner</p><small>Sports</small>
+          <span>07</span><strong>Qualified</strong><p>Smart India Hackathon (college-level round)</p><small>SIH</small>
+        </div>
+        <div class="achievement-row reveal">
+          <span>08</span><strong>Qualified</strong><p>MSME Hackathon</p><small>—</small>
         </div>
       </div>
     </section>
 
-    <!-- POSITION OF RESPONSIBILITY -->
-    <section class="por section" id="por">
+    <!-- ABOUT -->
+    <section class="about section" id="about">
       <div class="section-intro reveal">
-        <p class="eyebrow">06 / LEADERSHIP</p>
-        <h2>Beyond the code.</h2>
+        <p class="eyebrow">05 / ABOUT</p>
+        <h2>Who am I?</h2>
       </div>
 
-      <div class="por-grid">
-        <article class="por-card reveal">
-          <span>STEM CLUB · NHCE</span>
-          <h3>Active Member</h3>
-          <p>2025–2026</p>
-        </article>
-        <article class="por-card reveal">
-          <span>IEEE · ICEMCSI</span>
-          <h3>Conference Host</h3>
-          <p>International IEEE Conference · June 2026</p>
-        </article>
-        <article class="por-card reveal">
-          <span>COMMUNITY</span>
-          <h3>BBMP Census Volunteer</h3>
-          <p>Census of India 2027</p>
-        </article>
-        <article class="por-card reveal">
-          <span>SPORTS CLUB</span>
-          <h3>Badminton Club Coordinator</h3>
-          <p>Sports leadership</p>
-        </article>
-        <article class="por-card reveal">
-          <span>STUDENT COUNCIL</span>
-          <h3>Student Council Member</h3>
-          <p>Various positions across the years</p>
-        </article>
+      <div class="about-content">
+        <div class="about-lead reveal">
+          <p class="large-copy">
+            I'm a Computer Science student who learns by shipping: full-stack apps
+            in TypeScript and Python, with the tests and CI to keep them working.
+          </p>
+          <p>
+            Most of what I build starts from a problem on campus: clubs juggling
+            sign-ups in spreadsheets, classmates stuck on C pointers, a cane that
+            can't warn its user. Off-screen I play badminton and the keyboard.
+          </p>
+          <a class="arrow-link" href="#projects">See what I've built <span>→</span></a>
+        </div>
+
+        <div class="about-facts reveal">
+          <div class="fact">
+            <span>Education</span>
+            <strong>B.E. Computer Science & Engineering</strong>
+            <small>New Horizon College of Engineering · Expected 2029</small>
+          </div>
+          <div class="fact">
+            <span>Academic</span>
+            <strong>CGPA — 9.75</strong>
+            <small>Out of 10, degree in progress</small>
+          </div>
+          <div class="fact">
+            <span>Location</span>
+            <strong>Bangalore, India</strong>
+            <small>Open to software engineering internships</small>
+          </div>
+          <div class="fact">
+            <span>Focus</span>
+            <strong>AI agents · Full-stack · IoT</strong>
+            <small>RAG, LangGraph, TypeScript, Python, ESP32</small>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section class="contact section" id="contact">
       <div class="contact-inner reveal">
-        <p class="eyebrow">07 / CONTACT</p>
+        <p class="eyebrow">06 / CONTACT</p>
         <h2>Let's build<br><em>something useful.</em></h2>
         <p class="contact-copy">
           I'm looking for software engineering internships, and I'm always up for a

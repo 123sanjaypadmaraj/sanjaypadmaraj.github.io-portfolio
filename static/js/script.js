@@ -160,4 +160,30 @@ if (contactForm) {
   status.setAttribute('role', 'status');
   grid.before(bar);
   bar.after(status);
+
+  // Show only the featured builds first; filters and the button reveal the rest
+  const extra = cards.filter((c) => c.previousElementSibling && grid.querySelector('.grid-divider')
+    && (grid.querySelector('.grid-divider').compareDocumentPosition(c) & Node.DOCUMENT_POSITION_FOLLOWING));
+  const more = document.createElement('button');
+  more.type = 'button';
+  more.className = 'show-more';
+  more.setAttribute('aria-expanded', 'false');
+  const label = (open) => (open ? 'Show fewer projects ↑' : `Show ${extra.length} more projects ↓`);
+  const setCollapsed = (collapsed) => {
+    grid.classList.toggle('is-collapsed', collapsed);
+    more.setAttribute('aria-expanded', String(!collapsed));
+    more.textContent = label(!collapsed);
+  };
+  if (extra.length) {
+    setCollapsed(true);
+    grid.after(more);
+    more.addEventListener('click', () => setCollapsed(!grid.classList.contains('is-collapsed')));
+    bar.addEventListener('click', (e) => {
+      const btn = e.target.closest('button');
+      if (!btn) return;
+      const all = btn.dataset.filter === 'all';
+      more.hidden = !all;
+      setCollapsed(all);
+    });
+  }
 })();

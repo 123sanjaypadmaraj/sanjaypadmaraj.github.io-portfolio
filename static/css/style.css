@@ -303,3 +303,20 @@ footer a:nth-of-type(2){color:var(--ink);font-weight:700}
 .grid-divider{grid-column:1/-1;border-top:1px solid var(--gold);padding-top:22px;margin-top:22px}
 .grid-divider p:last-child{color:var(--muted);font-size:13px;margin-top:6px}
 .project-grid.is-filtered .grid-divider{display:none}
+
+/* At-a-glance stats, skill groups and the collapsible project list */
+.hero-stats{list-style:none;display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:22px}
+.hero-stats li{display:grid;gap:2px}
+.hero-stats strong{font:700 24px "Space Grotesk";color:var(--gold-light)}
+.hero-stats span{font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:var(--muted)}
+.section-sub{color:var(--muted);font-size:14px;margin-top:10px;max-width:520px}
+.skill-group{margin-top:14px}
+.skill-group strong{font:600 13px "Space Grotesk";color:var(--ink)}
+.skill-group .stack-list{margin-top:8px}
+.timeline-item small a{color:var(--gold);border-bottom:1px solid var(--gold)}
+.project-grid.is-collapsed .grid-divider ~ .project-card{display:none}
+.project-grid.is-collapsed .grid-divider{display:none}
+.show-more{display:block;margin:26px auto 0;background:transparent;border:1px solid var(--gold);color:var(--ink);padding:13px 26px;font:600 12px "Space Grotesk";letter-spacing:1.2px;cursor:pointer;transition:.25s}
+.show-more:hover{background:var(--gold);color:var(--onGold)}
+.show-more:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px}
+.show-more[hidden]{display:none}
